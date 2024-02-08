@@ -10,6 +10,13 @@ span{
 hr{
     margin: 0 !important;
 }
+input{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none !important;
+}
 .text-grey{
     color: #7e7e7e;
 }
@@ -19,6 +26,5 @@ hr{
 .container{
     width: 1600px !important;
     max-width: 100% !important;
-    background-color: rgb(255, 170, 170);
-    margin: auto;
+    /*background-color: rgb(255, 170, 170);*/
 }
