@@ -38,11 +38,10 @@
 .topHeader-flag{
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .flag{
-    width: 30px;
-    height: 20px;
+    width: 20px;
+    height: 10px;
 }
 .topHeader-flag-section{
     display: flex;
