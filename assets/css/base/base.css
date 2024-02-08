@@ -1,0 +1,24 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+span{
+    cursor: pointer;
+    border: none;
+}
+hr{
+    margin: 0 !important;
+}
+.text-grey{
+    color: #7e7e7e;
+}
+.text-green{
+    color: #3bb77e;
+}
+.container{
+    width: 1600px !important;
+    max-width: 100% !important;
+    background-color: rgb(255, 170, 170);
+    margin: auto;
+}

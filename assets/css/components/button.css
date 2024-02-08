@@ -1,0 +1,15 @@
+.header-dropdown {
+    position: relative;
+    display: block;
+    border-left: 1px solid grey;
+}
+.header-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.header-dropdown:hover .header-dropdown-content {
+    display: block;
+}
