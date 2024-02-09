@@ -1,0 +1,59 @@
+.topHeader-left span{
+    font-size: 13px;
+    border-left: 1px solid grey;
+    padding: 5px;
+}
+.topHeader-left span:hover{
+    color: black;
+}
+.topHeader-left{
+    font-size: 12px;
+    gap: 10px;
+    display: flex;
+    color: var(--primary-color);
+}
+.topHeader-right span{
+    font-size: 13px;
+    border-left: 1px solid grey;
+    padding: 5px;
+}
+.topHeader-right span:hover{
+    color: black;
+}
+.topHeader-right{
+    font-size: 12px;
+    gap: 10px;
+    display: flex;
+    justify-content: end;
+    color: var(--primary-color);
+}
+.topHeader-right-button{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 8px;
+}
+.topHeader-right-button:hover{
+    cursor: pointer;
+}
+.topHeader-flag{
+    display: flex;
+    flex-direction: column;
+}
+.flag{
+    width: 20px;
+    height: 10px;
+}
+.topHeader-flag-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topHeader-flag-section:hover{
+    color: black;
+    background-color: #99979742;
+}
+.topHeader-flag-section span{
+    border: none !important;
+}

@@ -12,7 +12,39 @@
 .header-dropdown:hover .header-dropdown-content {
     display: block;
 }
-.topFooter-location{
+.account-dropdown {
+    position: relative;
+    display: block;
+}
+.account-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.account-dropdown:hover .account-dropdown-content {
+    display: block;
+}
+.megamenu-dropdown {
+    position: relative;
+    display: block;
+}
+.megamenu-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 111111111;
+    width: 1500px;
+    margin-left: -511px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.megamenu-dropdown:hover .megamenu-dropdown-content {
+    display: block;
+}
+.middleheader-location{
     border: 1px solid #99979742 !important;
     color: #3bb77e !important;
     gap: 5px;
