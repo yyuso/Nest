@@ -1,7 +1,6 @@
 .header-dropdown {
     position: relative;
     display: block;
-    border-left: 1px solid grey;
 }
 .header-dropdown-content {
     display: none;
@@ -12,4 +11,12 @@
 }
 .header-dropdown:hover .header-dropdown-content {
     display: block;
+}
+.topFooter-location{
+    border: 1px solid #99979742 !important;
+    color: #3bb77e !important;
+    gap: 5px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
