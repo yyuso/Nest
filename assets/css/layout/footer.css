@@ -64,9 +64,9 @@
     position: absolute;
     top: -10px;
 }
-.footer-position1{left: 33px;}
-.footer-position2{left: 39px;}
-.footer-position3{left: 50px;}
+.footer-position1{left: 14px;}
+.footer-position2{left: 20px;}
+.footer-position3{left: 35px;}
 .topHeader-right-user{
     display: flex;
     flex-direction: column; 
