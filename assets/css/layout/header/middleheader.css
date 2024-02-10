@@ -81,3 +81,6 @@
 .middleheader-right-user-section:hover{
     color: #3bb77e;
 }
+.section{
+    display: none;
+}

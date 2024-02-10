@@ -8,8 +8,57 @@
     .middleheader-search{
         display: none !important;
     }
-    .middleheader-compare{
+    .fa-recycle{
         display: none !important;
+    }
+    .topHeader-right-button{
+        display: none !important;
+    }
+    .account-dropdown-content{
+        display: none !important;
+    }
+    .container{
+        width: 420px !important;
+    }
+    .swiper-slide-main{
+        width: 405px !important;
+    }
+    .bottomheader-right{
+        display: none !important;
+    }
+    hr{
+        display: none;
+    }
+    .main{
+        margin-top: 20px !important;
+    }
+    .section{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .middleheader-compare span{
+        display: none !important;
+    }
+    .pro-count{
+        display: none !important;
+    }
+    .slider-text{
+        top: 50px !important;
+        left: 25px !important;
+    }
+    .slider-input-subscribe{
+        left: 125px !important;
+    }
+    .slider-input input {
+        width: 168px !important;
+    }
+    .slider-text b{
+        font-size: 40px !important;
+    }
+    .slider-text span{
+        font-size: 20px !important;
     }
 
 }

@@ -26,6 +26,7 @@
 .swiper-slide-main img{
     border-radius: 30px;
     position: relative;
+    object-fit: cover;
 }
 .slider-text{
     position: absolute;
