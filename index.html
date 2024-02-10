@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
     <title>Nest</title>
 </head>
 <body>
@@ -24,7 +27,7 @@
                             </div>
                         </div>
                         <div class="col text-center">
-                           <span class="text-green"> Supper Value Deals - Save more with coupons</span>
+                           <div class="text-green anime" style="margin-top: -248px;"> Supper Value Deals - Save more with coupons</div>
                         </div>
                         <div class="col">
                             <div class="topHeader-right">
@@ -344,6 +347,48 @@
             </div>
             <hr>
         </section>
+        <section class="main mt-4">
+            <div class="slider">
+                <div class="container">
+                    <div class="Slider">
+                        <div class="swiper mainslider">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="swiper-slide-main">
+                                    <img src="assets/image/banner/slider/slider-1.png" alt="">
+                                    <div class="slider-text">
+                                        <b>Don’t miss amazing <br> grocery deals</b>
+                                        <span>Save up to 50% off on your first order</span>
+                                        <div class="slider-input mt-5">
+                                            <div class="slider-paper"><i class="fa-regular fa-paper-plane"></i></div>
+                                            <input type="text" placeholder="your mail address">
+                                            <div class="slider-input-subscribe">Subscribe</div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="swiper-slide-main">
+                                    <img src="assets/image/banner/slider/slider-2.png" alt="">
+                                    <div class="slider-text">
+                                        <b>Fresh Vegetables <br> Big discount</b>
+                                        <span>Save up to 50% off on your first order</span>
+                                        <div class="slider-input mt-5">
+                                            <div class="slider-paper"><i class="fa-regular fa-paper-plane"></i></div>
+                                            <input type="text" placeholder="your mail address">
+                                            <div class="slider-input-subscribe">Subscribe</div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination">sa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <script src="assets/script/js/script.js"></script>
 </body>
 </html>
