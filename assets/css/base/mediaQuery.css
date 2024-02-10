@@ -1,0 +1,15 @@
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .topHeader-left{
+        display: none;
+    }
+    .topHeader{
+        display: none !important;
+    }
+    .middleheader-search{
+        display: none !important;
+    }
+    .middleheader-compare{
+        display: none !important;
+    }
+
+}
