@@ -1,9 +1,11 @@
 .productslider-middle{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .productslider-middle b{
     font-size: 30px;
+    margin-left: 25px;
 }
 .slider-cart{
     width: max-content !important;
