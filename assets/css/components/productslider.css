@@ -1,0 +1,31 @@
+.productslider-middle{
+    display: flex;
+    justify-content: space-between;
+}
+.productslider-middle b{
+    font-size: 30px;
+}
+.slider-cart{
+    width: max-content !important;
+    border: 1px solid var(--primary-color3);
+}
+.slider-cart:hover{
+    border: 1px solid var(--primary-color2);
+}
+.slider-menu{
+    gap: 20px;
+    display: flex !important;
+    width: max-content !important;
+}
+.slider-button{
+    margin-right: 0 !important;
+    padding: 50px !important;
+    gap: 20px !important;
+    display: flex !important;
+}
+.slider-button div{
+   color: var(--primary-color2) !important;
+   font-size: 15px !important;
+   height: 15px !important;
+   width: 15px !important;
+}
