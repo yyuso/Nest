@@ -39,7 +39,7 @@
     transition-duration: 0.3s;
     margin-left: 5px;
 }
-.banner-text-tittle:hover{
+.banner-cart:hover .banner-text-tittle{
     transform: scale(1.05);
     transform: translateY(-20%);
     transition-duration: 0.5s;
