@@ -20,7 +20,7 @@
     width: max-content !important;
 }
 .slider-button{
-    margin-right: 0 !important;
+    margin-right: 20px !important;
     padding: 50px !important;
     gap: 20px !important;
     display: flex !important;
