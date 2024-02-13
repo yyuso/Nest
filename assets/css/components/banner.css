@@ -1,0 +1,46 @@
+.banner-cart{
+    border-radius: 10px;
+    position: relative;
+}
+.banner-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.banner-text {
+    position: absolute;
+    top: 45px;
+    width: 199px;
+    left: 35px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.banner-text-tittle{
+    font-size: 25px;  
+    height: 115px;
+}
+.banner-text-button{
+    color: var(--primary-color3);
+    background-color: var(--primary-color2);
+    width: max-content;
+    padding: 8px;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+}
+.banner-text-button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color6);
+}
+.banner-text-button:hover i{
+    transition-duration: 0.3s;
+    margin-left: 5px;
+}
+.banner-text-tittle:hover{
+    transform: scale(1.05);
+    transform: translateY(-20%);
+    transition-duration: 0.5s;
+}

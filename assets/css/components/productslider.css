@@ -1,11 +1,11 @@
 .productslider-middle{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .productslider-middle b{
     font-size: 30px;
     margin-left: 25px;
+    margin-top: 5px;
 }
 .slider-cart{
     width: max-content !important;
@@ -20,7 +20,7 @@
     width: max-content !important;
 }
 .slider-button{
-    margin-right: 0 !important;
+    margin-right: 20px !important;
     padding: 50px !important;
     gap: 20px !important;
     display: flex !important;
