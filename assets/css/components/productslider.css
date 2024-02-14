@@ -22,7 +22,6 @@
     margin-right: 20px !important;
     padding: 50px !important;
     gap: 20px !important;
-    display: flex !important;
 }
 .slider-button div{
    color: var(--primary-color2) !important;
@@ -31,6 +30,14 @@
    width: 15px !important;
 }
 .productslider-middle-tittle{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+.productslider-middle-text{
     display: flex;
     gap: 25px;
     align-items: center;
