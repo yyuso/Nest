@@ -26,3 +26,31 @@ var productsSlider = new Swiper(".productsSlider", {
     },
   }
 });
+
+
+var lastClickedElement = document.querySelector('.clicked');
+
+    function openCity(navsName, clickedElement) {
+      // Eğer bir linkse tıklandığında sayfa başına atlamayı engelle
+      event.preventDefault();
+
+      // Eski tıklanan öğenin rengini sıfırla
+      if (lastClickedElement !== null) {
+        lastClickedElement.classList.remove("clicked");
+      }
+
+      // Yeni tıklanan öğenin rengini değiştir
+      clickedElement.classList.add("clicked");
+
+      // LastClickedElement'i güncelle
+      lastClickedElement = clickedElement;
+
+      // Diğer tablardaki içerikleri gizle
+      var tabs = document.getElementsByClassName("tabs");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+      }
+
+      // Belirtilen tabı göster
+      document.getElementById(navsName).style.display = "block";
+    }

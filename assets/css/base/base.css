@@ -11,6 +11,12 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    overflow-x: hidden;
+}
+h1,h2,b{
+    font-family: "Quicksand", sans-serif !important;
+}
 span{
     cursor: pointer;
     border: none;
@@ -41,4 +47,7 @@ a{
     width: 1600px !important;
     max-width: 100% !important;
     /*background-color: rgb(255, 170, 170);*/
+}
+button{
+    border: none;
 }
