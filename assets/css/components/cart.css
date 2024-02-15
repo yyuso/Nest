@@ -53,6 +53,7 @@
 .popularproduct-cart:hover{
     border: 1px solid var(--primary-color2);
     cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 .popularproduct-cart:hover .product-action{
     display: block;
