@@ -95,5 +95,11 @@
     .productslider-bottom{
         margin-top: 25px;
     }
-
+    .sw-slider{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .dailybestsells-bottom-right{
+        margin-top: 20px;
+    }
 }

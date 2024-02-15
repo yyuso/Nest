@@ -24,11 +24,11 @@
 
 .popularproduct-cart{
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px 15px 15px 15px;
     gap: 10px;
     display: flex;
     flex-direction: column;
-    height: 545px;
+    height: 545px; /*545px*/
     position: relative;
     width: 296px;
 }
@@ -54,7 +54,6 @@
     border: 1px solid var(--primary-color2);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
     cursor: pointer;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 .popularproduct-cart:hover .product-action{
     display: block;
@@ -127,7 +126,7 @@
 .popularproduct-cart-input{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .popularproduct-cart-price{
     font-size: 18px;
@@ -187,4 +186,32 @@
 }
 .product-action-eyes:hover, .product-action-shop:hover, .product-action-heart:hover{
     color: var(--primary-color6);
+}
+.popularproduct-cart-progress{
+    display: block;
+}
+.progress{
+    height: 5px !important;
+    background-color: #c9f8c9 !important;
+}
+.progress-bar{
+    background-color: var(--primary-color2) !important;
+}
+.popularproduct-cart-addv2{
+    background-color: var(--primary-color2);
+    color: var(--primary-color3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: 15px;
+}
+.popularproduct-cart-addv2:hover{
+    background-color: var(--primary-color6);
+    transform: translateY(-10%);
+    transition-duration: 0.5s;  
+}
+.popularproduct-size{
+    height: 565px !important;
 }

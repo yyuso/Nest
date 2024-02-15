@@ -1,0 +1,37 @@
+.dailybestsells-up b{
+    font-size: 25px;
+}
+.dailybestsells-bottom{
+    display: block;
+}
+.dailybestsells-bottom-left{
+    height: 565px;
+    position: relative;
+}
+.dailybestsells-bottom-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.dailybestsells-bottom-left-text{
+    position: absolute;
+    top: 35px;
+    width: 220px;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    left: 50px;
+}
+.dailybestsells-bottom-left-text b{
+    font-size: 35px;
+}
+.dailybestsells-cart{
+    display: flex;
+    justify-content: center;
+    width: max-content;
+}
+.swdailybestsells{
+    display: flex;
+    gap: 15px;
+}

@@ -9,7 +9,7 @@ var mainSlider = new Swiper(".mainslider", {
 });
 
 var productsSlider = new Swiper(".productsSlider", {
-  slidesPerView: 3,
+  slidesPerView: 10,
   spaceBetween: 30,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -22,6 +22,25 @@ var productsSlider = new Swiper(".productsSlider", {
     },
     400: {
       slidesPerView: 2,
+      spaceBetween: 2
+    },
+  }
+});
+
+var swiper = new Swiper(".mydailybestsells", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 4,
+      spaceBetween: 2
+    },
+    400: {
+      slidesPerView: 1,
       spaceBetween: 2
     },
   }
