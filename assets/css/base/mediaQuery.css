@@ -32,7 +32,7 @@
     .main{
         margin-top: 20px !important;
     }
-    .section{
+    .sections{
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -107,5 +107,11 @@
     }
     .dealsoftheday-cart{
         margin-top: 20px;
+    }
+    .banner-text{
+        top: 20px !important;
+    }
+    .bottom-trend{
+        margin-top: 50px;
     }
 }
