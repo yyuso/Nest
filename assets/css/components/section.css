@@ -144,3 +144,8 @@
     color: var(--primary-color2);
     cursor: pointer;
 }
+.bottom-trend-list {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;}
+
