@@ -74,6 +74,9 @@
     gap: 10px;
     flex-direction: column;
 }
+.dealsoftheday-cart-content-wrap{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
 .dealsoftheday-cart-content-date{
     display: flex;
     gap: 10px;
