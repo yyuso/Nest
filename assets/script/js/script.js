@@ -39,7 +39,7 @@ var swiper = new Swiper(".mydailybestsells", {
       slidesPerView: 4,
       spaceBetween: 2
     },
-    400: {
+    333: {
       slidesPerView: 1,
       spaceBetween: 2
     },

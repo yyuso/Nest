@@ -102,4 +102,10 @@
     .dailybestsells-bottom-right{
         margin-top: 20px;
     }
+    .dailybestsells-up, .dealsoftheday-up{
+        text-align: left;
+    }
+    .dealsoftheday-cart{
+        margin-top: 20px;
+    }
 }
