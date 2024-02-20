@@ -84,10 +84,14 @@
 }
 .lastbottomfooter-followus{
     background-color: var(--primary-color2);
-    width: 35px;
+    width: 36px;
     height: 35px;
     border-radius: 1000px;
     padding: 5px;
+}
+.lastbottomfooter-followus:hover{
+    transform: translateY(-10%);
+    transition-duration: 0.5s;
 }
 .lastbottomfooter-followus-group{
     display: flex;

@@ -128,4 +128,13 @@
         flex-direction: column;
         gap: 10px;
     }
+    .lastbottomfooter-working{
+        display: none !important;
+    }
+    .lastbottomfooter-followUS{
+        display: none !important;
+    }
+    .bottomfooter1{
+        width: 100% !important;
+    }
 }

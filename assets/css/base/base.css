@@ -12,11 +12,12 @@
     font-family: "Montserrat", sans-serif;
     list-style: none;
     text-decoration: none;
+    /*
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
 	-ms-user-select: none;
-	user-select: none
+	user-select: none*/
 }
 body{
     overflow-x: hidden;
