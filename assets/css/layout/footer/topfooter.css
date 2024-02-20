@@ -1,0 +1,33 @@
+.topfooter-img{
+    height: 400px;
+    position: relative;
+    background-color: var(--primary-color7);
+    border-radius: 20px;
+}
+.topfooter-img img{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    max-width: 40%;
+}
+.topfooter-img-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    left: 100px;
+    text-align: left;
+    gap: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+.topfooter-img-text b{
+    font-size: 50px;
+    font-family: "Quicksand", sans-serif;
+    color: var(--primary-color4);
+}
+.topfooter-img-text span{
+    font-size: 25px;
+    color: var(--primary-color);
+    font-family: "Quicksand", sans-serif;
+    color: var(--primary-color4);
+}

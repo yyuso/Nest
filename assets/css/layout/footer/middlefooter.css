@@ -1,0 +1,27 @@
+.middlefooter-icon{
+    display: flex;
+    background-color: var(--primary-color8);
+    border-radius: 10px;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+}
+.middlefooter-icon:hover img{
+    transform: translateY(-10%);
+    transition-duration: 0.5s;
+}
+.middlefooter-icon img{
+    width: 60px;
+    height: 60px;
+}
+.middlefooter-icon-tittle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.middlefooter-icon-tittle b{
+    font-size: 20px;
+}
+.middlefooter-icon-tittle span{
+    color: var(--primary-color);
+}

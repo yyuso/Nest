@@ -5,11 +5,18 @@
     --primary-color4:  #253D4E;
     --primary-color5:  #000000;
     --primary-color6:  #FDC040;
+    --primary-color7:  #d8f1e5;
+    --primary-color8:  #f4f6fa;
 }
 *{
     font-family: "Montserrat", sans-serif;
     list-style: none;
     text-decoration: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none
 }
 body{
     overflow-x: hidden;

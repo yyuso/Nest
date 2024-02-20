@@ -45,7 +45,8 @@
     font-size: 25px;
     color: var(--primary-color);
     font-family: "Quicksand", sans-serif;
-    color: var(--primary-color4);}
+    color: var(--primary-color4);
+}
 .slider-input{
     display: flex;
 }

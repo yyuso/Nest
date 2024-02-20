@@ -114,4 +114,18 @@
     .bottom-trend{
         margin-top: 50px;
     }
+    .topfooter-img-text{
+        top: 15px !important;
+        left: 25px !important;
+    }
+    .topfooter-img-text b{
+        font-size: 40px !important;
+    }
+    .topfooter-img-text span{
+        font-size: 20px !important;
+    }
+    .middlefooter{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
