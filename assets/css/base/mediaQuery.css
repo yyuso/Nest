@@ -8,7 +8,7 @@
     .middleheader-search{
         display: none !important;
     }
-    .fa-recycle{
+    .middleheader-compare{
         display: none !important;
     }
     .topHeader-right-button{
@@ -136,5 +136,18 @@
     }
     .bottomfooter1{
         width: 100% !important;
+    }
+    .PopupMenu{
+        display: none !important;
+    }
+    .bottomHeader{
+        display: none;
+    }
+    .middleHeader {
+        background-color: var(--primary-color3);
+        z-index: 1111111111111;
+        border-bottom: 1px solid #c7c8c9;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    
     }
 }
