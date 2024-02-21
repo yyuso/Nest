@@ -1,0 +1,44 @@
+.PopupMenu{
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    border:1px solid var(--primary-color2);
+    border-bottom-left-radius: 55px;
+    border-top-left-radius: 55px;
+    width: 600px;
+    right: -555px;
+    position: fixed;
+    transition-duration: 0.5s;
+    z-index: 1111111111111;
+    margin-top: 250px;
+    color: var(--primary-color2);
+    background-color: var(--primary-color3);
+} 
+.PopupMenu.active{
+    right: 0;
+}
+.PopupMenu-tittle{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    width: 80px;
+} 
+.PopupMenu-tittle:hover{
+    background-color: var(--primary-color2);
+    color: var(--primary-color3);
+}  
+.PopupMenu-main{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.popupmenu{
+    user-select: none;
+    position: absolute;
+}
