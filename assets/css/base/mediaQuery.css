@@ -140,7 +140,11 @@
     .middleHeader-section-5, .middleHeader-section-1, .middleHeader-section-2{
         display:none;
     }
-    .middleHeader-section-3, middleHeader-section-4{
-        max-width:20px;
+    .middleHeader-section-3{
+        max-width:20px !important;
+    }
+    .middleHeader-section-4{
+        max-width:20px !important;
+        margin-left:20px
     }
 }
