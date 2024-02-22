@@ -146,8 +146,10 @@
     }
     .middleheader-position3 {
     left: 4px !important;
+    top: -22px;
     }
     .middleheader-position2 {
     left: 0px !important;
+    top: -22px;
     }
 }
