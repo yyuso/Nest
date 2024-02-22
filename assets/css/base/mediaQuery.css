@@ -143,17 +143,7 @@
     .bottomHeader{
         display: none;
     }
-    #navbarv2 {
-    background-color: var(--primary-color3);
-    z-index: 1111111111111;
-    border-bottom: 1px solid #c7c8c9;
-    margin-top: 0 !important;
-    padding-bottom: 20px;
-    }
-    .stickyv2 {
-    position: fixed;
-    top: 0;
-    width: 100%;
-     background-color: red;
+    .sa{
+            max-width: max-content;
     }
 }
