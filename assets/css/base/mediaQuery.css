@@ -11,12 +11,6 @@
     .middleheader-comparee{
         display: none !important;
     }
-    .topHeader-right-button{
-        display: none !important;
-    }
-    .account-dropdown-content{
-        display: none !important;
-    }
     .container{
         width: 410px !important;
     }
