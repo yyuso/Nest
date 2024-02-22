@@ -60,6 +60,7 @@
     font-weight: 500 !important;
     font-size: 18px !important;
     color: var(--primary-color5) !important;
+    width: max-content;
 }
 .navbar-link-deals i{color: var(--primary-color2);}
 .navbar-link-deals:hover{color: var(--primary-color2) !important;}
