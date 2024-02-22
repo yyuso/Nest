@@ -171,11 +171,6 @@
     z-index: 1111111111111;
     border-bottom: 1px solid #c7c8c9;
 }
-#navbarv2 {
-    background-color: var(--primary-color3);
-    z-index: 1111111111111;
-    border-bottom: 1px solid #c7c8c9;
-}
 .sticky {
     position: fixed;
     top: 0;
