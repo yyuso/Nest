@@ -137,4 +137,6 @@
     .bottomHeader{
         display: none;
     }
+    .middleHeader-section-4, .middleHeader-section-1{
+        display:none;
 }
