@@ -115,4 +115,3 @@ function producttopsection(){
               div.classList.add("active");
           }
 }
-
