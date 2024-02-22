@@ -107,20 +107,19 @@ function myFunction() {
   }
 }
 
-    // When the user scrolls the page, execute myFunction
-//windows.onscroll = function2() {myFunction2()};
 
-// Get the navbar
-//var navbar2 = document.getElementById("navbarv2");
+windows.onscroll = function2() {myFunction2()};
 
-// Get the offset position of the navbar
-//var sticky2 = navbar2.offsetTop;
+var navbar2 = document.getElementById("navbarv2");
+
+
+var sticky2 = navbar2.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-//function myFunction2() {
-  //if (windows.pageYOffset >= sticky2) {
-    //navbar2.classList.add("stickyv2")
-  //} else {
-   // navbar2.classList.remove("stickyv2");
-  //}
+function myFunction2() {
+  if (windows.pageYOffset >= sticky2) {
+    navbar2.classList.add("stickyv2")
+  } else {
+    navbar2.classList.remove("stickyv2");
+  }
 }
