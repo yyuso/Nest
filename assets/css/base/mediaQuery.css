@@ -147,5 +147,7 @@
     background-color: var(--primary-color3);
     z-index: 1111111111111;
     border-bottom: 1px solid #c7c8c9;
-}
+    margin-top: 0 !important;
+    padding-bottom: 20px;
+    }
 }
