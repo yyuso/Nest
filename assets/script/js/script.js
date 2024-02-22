@@ -122,6 +122,6 @@ function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("stickyv2")
   } else {
-    navbar.classList.remove("sticky");
+    navbar.classList.remove("stickyv2");
   }
 }
