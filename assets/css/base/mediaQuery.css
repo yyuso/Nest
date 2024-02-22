@@ -5,23 +5,17 @@
     .topHeader{
         display: none !important;
     }
-    .middleheader-search{
+    .middleHeader-search{
         display: none !important;
     }
-    .middleheader-compare{
-        display: none !important;
-    }
-    .topHeader-right-button{
-        display: none !important;
-    }
-    .account-dropdown-content{
+    .middleheader-comparee{
         display: none !important;
     }
     .container{
         width: 410px !important;
     }
     .swiper-slide-main{
-        width: 405px !important;
+        width: 390px !important;
     }
     .bottomheader-right{
         display: none !important;
@@ -39,9 +33,6 @@
         text-align: center;
     }
     .middleheader-compare span{
-        display: none !important;
-    }
-    .pro-count{
         display: none !important;
     }
     .slider-text{
@@ -142,5 +133,26 @@
     }
     .bottomHeader{
         display: none;
+    }
+    .middleHeader-section-5, .middleHeader-section-1, .middleHeader-section-2{
+        display:none;
+    }
+    .middleHeader-section-3{
+        max-width:20px !important;
+    }
+    .middleHeader-section-4{
+        max-width:20px !important;
+        margin-left:20px;
+    }
+    .middleheader-position3 {
+    left: 4px !important;
+    top: -22px !important;
+    }
+    .middleheader-position2 {
+    left: 0px !important;
+    top: -22px !important;
+    }
+    .bottomfooter2{
+        margin-top: 20px !important;
     }
 }

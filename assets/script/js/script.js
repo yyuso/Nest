@@ -106,3 +106,12 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+function producttopsection(){
+  var div = document.getElementById("product-top-section");
+  if (div.classList.contains("active")) {
+              div.classList.remove("active");
+          } else {
+              div.classList.add("active");
+          }
+}

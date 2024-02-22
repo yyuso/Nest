@@ -7,6 +7,7 @@
     --primary-color6:  #FDC040;
     --primary-color7:  #d8f1e5;
     --primary-color8:  #f4f6fa;
+    --primary-color9:  #ececec;
 }
 *{
     font-family: "Montserrat", sans-serif;
@@ -31,6 +32,7 @@ span{
 }
 hr{
     margin: 0 !important;
+    color: var(--primary-color9) !important;
 }
 input{
     border: none;
@@ -38,12 +40,13 @@ input{
 }
 a{
     text-decoration: none !important;
+    color: inherit !important;
 }
 .text-grey{
     color: #7e7e7e;
 }
 .text-green{
-    color: #3bb77e;
+    color: #3bb77e !important;
 }
 .bg-grey{
     background-color: #7e7e7e;

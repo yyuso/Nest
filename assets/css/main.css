@@ -4,6 +4,9 @@
 @import url('/assets/css/layout/header/topheader.css');
 @import url('/assets/css/layout/header/middleheader.css');
 @import url('/assets/css/layout/header/bottomheader.css');
+@import url('/assets/css/layout/footer/topfooter.css');
+@import url('/assets/css/layout/footer/middlefooter.css');
+@import url('/assets/css/layout/footer/bottomfooter.css');
 @import url('/assets/css/components/button.css');
 @import url('/assets/css/components/banner.css');
 @import url('/assets/css/components/cart.css');
@@ -12,6 +15,6 @@
 @import url('/assets/css/components/popularproduct.css');
 @import url('/assets/css/components/section.css');
 @import url('/assets/css/components/popup.css');
-@import url('/assets/css/layout/footer/topfooter.css');
-@import url('/assets/css/layout/footer/middlefooter.css');
-@import url('/assets/css/layout/footer/bottomfooter.css');
+@import url('/assets/css/pages/product/product.css');
+
+
