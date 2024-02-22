@@ -108,7 +108,7 @@ function myFunction() {
 }
 
 
-windows.onscroll = function2() {myFunction2()};
+windows.onscroll = function() {myFunction2()};
 
 var navbar2 = document.getElementById("navbarv2");
 
