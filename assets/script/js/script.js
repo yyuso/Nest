@@ -110,16 +110,16 @@ function myFunction() {
 
 windows.onscroll = function() {myFunction2()};
 
-var navbar2 = document.getElementById("navbarv2");
+var navbarv2 = document.getElementById("navbarv2");
 
 
-var sticky2 = navbar2.offsetTop;
+var sticky2 = navbarv2.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction2() {
   if (windows.pageYOffset >= sticky2) {
-    navbar2.classList.add("stickyv2")
+    navbarv2.classList.add("stickyv2")
   } else {
-    navbar2.classList.remove("stickyv2");
+    navbarv2.classList.remove("stickyv2");
   }
 }
