@@ -150,4 +150,9 @@
     margin-top: 0 !important;
     padding-bottom: 20px;
     }
+    .stickyv2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
 }
