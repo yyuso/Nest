@@ -144,4 +144,10 @@
         max-width:20px !important;
         margin-left:20px;
     }
+    .middleheader-position3 {
+    left: 4px !important;
+    }
+    .middleheader-position2 {
+    left: 0px !important;
+    }
 }
