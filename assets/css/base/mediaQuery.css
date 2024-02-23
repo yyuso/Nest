@@ -37,7 +37,7 @@
     }
     .slider-text{
         top: 50px !important;
-        left: 25px !important;
+        left: 15px !important;
     }
     .slider-input-subscribe{
         left: 200px !important
@@ -170,5 +170,9 @@
     .middleHeader-section{
         display: flex;
         justify-content: center;
+    }
+    .product-top-section-cart-group{
+        display: flex;
+        gap: 15px;
     }
 }
