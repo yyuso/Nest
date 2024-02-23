@@ -33,7 +33,7 @@ span{
 }
 hr{
     margin: 0 !important;
-    color: #d5cdcd !important;
+    color: var(--primary-color10) !important;
 }
 input{
     border: none;
@@ -44,7 +44,7 @@ a{
     color: inherit !important;
 }
 .text-grey{
-    color: #7e7e7e;
+    color: #7e7e7e !important;
 }
 .text-green{
     color: #3bb77e !important;
