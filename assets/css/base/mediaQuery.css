@@ -145,12 +145,12 @@
         margin-left:20px;
     }
     .middleheader-position3 {
-    left: 4px !important;
-    top: -22px !important;
+        left: 4px !important;
+        top: -22px !important;
     }
     .middleheader-position2 {
-    left: 0px !important;
-    top: -22px !important;
+        left: 0px !important;
+        top: -22px !important;
     }
     .bottomfooter2{
         margin-top: 20px !important;
@@ -158,5 +158,10 @@
     .middleheadermain{
         display: flex;
         justify-content: space-between;
+    }
+    .middleHeader-logo{
+        justify-content: center;
+        align-items: center;
+       display: flex;
     }
 }
