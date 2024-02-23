@@ -164,4 +164,11 @@
         align-items: center;
        display: flex;
     }
+    .swiper-slide-main{
+        padding: 0 !important;
+    }
+    .middleHeader-section{
+        display: flex;
+        justify-content: center;
+    }
 }
