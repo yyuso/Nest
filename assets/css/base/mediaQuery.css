@@ -28,7 +28,7 @@
     }
     .sections{
         display: flex !important;
-        justify-content: center;
+        justify-content: start !important;
         align-items: center;
         text-align: center;
     }
@@ -154,5 +154,9 @@
     }
     .bottomfooter2{
         margin-top: 20px !important;
+    }
+    .middleheadermain{
+        display: flex;
+        justify-content: space-between;
     }
 }
