@@ -5,13 +5,16 @@
     display: block;
 }
 .product-top-filters{
-    border: 1px solid var(--primary-color);
-    width: max-content;
+    width: 145px;
+    height: 45px;
     padding: 7px;
-    border-radius: 10px;
+    border-radius: 40px;
     display: flex;
     gap: 15px;
     align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--primary-color9);
     color: var(--primary-color2);
 }
 .product-top-filters i{
