@@ -107,11 +107,16 @@ function myFunction() {
   }
 }
 
-function producttopsection(){
-  var div = document.getElementById("product-top-section");
-  if (div.classList.contains("active")) {
-              div.classList.remove("active");
-          } else {
-              div.classList.add("active");
-          }
+document.addEventListener("DOMContentLoaded", function () {
+  var productTopSection = document.getElementById("product-top-section");
+
+  // Menüyü başlangıçta açık yap
+  productTopSection.classList.add("active");
+});
+
+function producttopsection() {
+  var productTopSection = document.getElementById("product-top-section");
+
+  // Menüyü açma ve kapama işlemini kontrol et
+  productTopSection.classList.toggle("active");
 }

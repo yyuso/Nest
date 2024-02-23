@@ -7,7 +7,8 @@
     --primary-color6:  #FDC040;
     --primary-color7:  #d8f1e5;
     --primary-color8:  #f4f6fa;
-    --primary-color9:  #ececec;
+    --primary-color9:  #f2eded;
+    --primary-color10:  #d5cdcd;
 }
 *{
     font-family: "Montserrat", sans-serif;
@@ -32,7 +33,7 @@ span{
 }
 hr{
     margin: 0 !important;
-    color: var(--primary-color9) !important;
+    color: #d5cdcd !important;
 }
 input{
     border: none;
@@ -61,7 +62,4 @@ a{
 }
 button{
     border: none;
-}
-.hr-color{
-    color: #3bb77e;
 }
