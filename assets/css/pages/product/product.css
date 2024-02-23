@@ -101,6 +101,3 @@
     color: var(--primary-color3);
     background-color: var(--primary-color2); 
 }
-.product-top-section-cart{
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
-}
