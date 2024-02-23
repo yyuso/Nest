@@ -34,6 +34,7 @@ span{
 hr{
     margin: 0 !important;
     color: #d5cdcd !important;
+    color: inherit !important;
 }
 input{
     border: none;
