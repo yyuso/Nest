@@ -32,7 +32,6 @@ span{
 }
 hr{
     margin: 0 !important;
-    color: var(--primary-color9) !important;
 }
 input{
     border: none;
