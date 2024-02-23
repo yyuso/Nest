@@ -32,7 +32,7 @@ span{
 }
 hr{
     margin: 0 !important;
-    color: #d5cdcd;
+    color: #d5cdcd !important;
 }
 input{
     border: none;
