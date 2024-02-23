@@ -140,12 +140,8 @@
     .middleHeader-section-3{
         max-width:20px !important;
     }
-    .middleHeader-section-4{
-        max-width:20px !important;
-        margin-left:20px;
-    }
     .middleheader-position3 {
-        left: 4px !important;
+        left: 15px !important;
         top: -22px !important;
     }
     .middleheader-position2 {
@@ -169,7 +165,7 @@
     }
     .middleHeader-section{
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
     .product-top-section-cart-group{
         display: flex;
