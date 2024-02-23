@@ -18,7 +18,7 @@
     color: var(--primary-color2);
 }
 .product-top-filters i{
-    color: var(--primary-color);
+   color: var(--primary-color10);
 }
 .product-top-filters:hover{
     color: var(--primary-color6);
