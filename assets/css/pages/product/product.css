@@ -197,7 +197,6 @@
     color: var(--primary-color10);
 }
 .product-top-section-cart-price-bottom-check-right{
-    background-color: black;
     width: max-content;
     height: max-content;
 }
@@ -209,7 +208,6 @@
     border-radius: 15px;
 }
 .product-top-section-cart-price-bottom-check{
-    background: aliceblue;
     display: flex;
     justify-content: space-between;
 }
