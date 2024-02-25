@@ -122,7 +122,6 @@ function producttopsection() {
 }
 
 
-
 const slider = document.querySelector('.slider');
   const selectedRange = document.getElementById('selectedRange');
   const thumb1 = document.querySelector('.thumb1');
@@ -132,8 +131,8 @@ const slider = document.querySelector('.slider');
 
   const updateSelectedRange = () => {
     const rect = slider.getBoundingClientRect();
-    const minValue = parseInt(thumb1.style.left) / 100 * rect.width;
-    const maxValue = parseInt(thumb2.style.left) / 100 * rect.width;
+    const minValue = (parseInt(thumb1.style.left) / 100) * rect.width || 0;
+    const maxValue = (parseInt(thumb2.style.left) / 100) * rect.width || 0;
 
     selectedRange.style.left = thumb1.style.left;
     selectedRange.style.width = (parseInt(thumb2.style.left) - parseInt(thumb1.style.left)) + '%';
