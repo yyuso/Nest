@@ -122,62 +122,67 @@ function producttopsection() {
 }
 
 
-  const slider = document.querySelector('.slider-rage');
-  const selectedRange = document.getElementById('selectedRange');
-  const thumb1 = document.querySelector('.thumb1');
-  const thumb2 = document.querySelector('.thumb2');
-  const minPriceDisplay = document.getElementById('minPrice');
-  const maxPriceDisplay = document.getElementById('maxPrice');
+const slider = document.querySelector('.slider-rage');
+    const selectedRange = document.getElementById('selectedRange');
+    const thumb1 = document.getElementById('thumb1');
+    const thumb2 = document.getElementById('thumb2');
+    const minPriceDisplay = document.getElementById('minPrice');
+    const maxPriceDisplay = document.getElementById('maxPrice');
 
-  maxPriceDisplay.style.color="var(--primary-color2)";
-  minPriceDisplay.style.color="var(--primary-color2)";
+    maxPriceDisplay.style.color = "var(--primary-color2)";
+    minPriceDisplay.style.color = "var(--primary-color2)";
 
-  const updateSelectedRange = () => {
-    const rect = slider.getBoundingClientRect();
-    const minValue = (parseInt(thumb1.style.left) / 100) * rect.width || 0;
-    const maxValue = (parseInt(thumb2.style.left) / 100) * rect.width || 0;
-
-    selectedRange.style.left = thumb1.style.left;
-    selectedRange.style.width = (parseInt(thumb2.style.left) - parseInt(thumb1.style.left)) + '%';
-
-    minPriceDisplay.textContent = `$${minValue.toFixed(2)}`;
-    maxPriceDisplay.textContent = `$${maxValue.toFixed(2)}`;
-  };
-
-  window.addEventListener('resize', updateSelectedRange);
-  window.addEventListener('load', updateSelectedRange);
-
-  let isDragging1 = false;
-  let isDragging2 = false;
-
-  thumb1.addEventListener('mousedown', () => {
-    isDragging1 = true;
-  });
-
-  thumb2.addEventListener('mousedown', () => {
-    isDragging2 = true;
-  });
-
-  document.addEventListener('mouseup', () => {
-    isDragging1 = false;
-    isDragging2 = false;
-  });
-
-  document.addEventListener('mousemove', (e) => {
-    if (isDragging1 || isDragging2) {
+    const updateSelectedRange = () => {
       const rect = slider.getBoundingClientRect();
-      let position = (e.clientX - rect.left) / rect.width;
+      const minValue = (parseInt(thumb1.style.left) / 100) * rect.width || 0;
+      const maxValue = (parseInt(thumb2.style.left) / 100) * rect.width || 0;
 
-      position = Math.max(0, Math.min(1, position)); // Ensure the position is between 0 and 1
+      selectedRange.style.left = thumb1.style.left;
+      selectedRange.style.width = (parseInt(thumb2.style.left) - parseInt(thumb1.style.left)) + '%';
 
-      if (isDragging1) {
-        thumb1.style.left = position * 100 + '%';
-      }
+      minPriceDisplay.textContent = `$${minValue.toFixed(2)}`;
+      maxPriceDisplay.textContent = `$${maxValue.toFixed(2)}`;
+    };
 
-      if (isDragging2) {
-        thumb2.style.left = position * 100 + '%';
-      }
-
+    const moveThumb = (thumb, position) => {
+      thumb.style.left = position + '%';
       updateSelectedRange();
-    }
-  });
+    };
+
+    slider.addEventListener('mousedown', (e) => {
+      const rect = slider.getBoundingClientRect();
+      const position = (e.clientX - rect.left) / rect.width * 100;
+      const distance1 = Math.abs(parseInt(thumb1.style.left) - position);
+      const distance2 = Math.abs(parseInt(thumb2.style.left) - position);
+
+      if (distance1 < distance2) {
+        moveThumb(thumb1, position);
+      } else {
+        moveThumb(thumb2, position);
+      }
+    });
+
+    window.addEventListener('resize', updateSelectedRange);
+    window.addEventListener('load', updateSelectedRange);
+
+    let isDragging1 = false;
+    let isDragging2 = false;
+
+    thumb1.addEventListener('mousedown', () => { isDragging1 = true; });
+    thumb2.addEventListener('mousedown', () => { isDragging2 = true; });
+
+    document.addEventListener('mouseup', () => {
+      isDragging1 = false;
+      isDragging2 = false;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging1 || isDragging2) {
+        const rect = slider.getBoundingClientRect();
+        let position = (e.clientX - rect.left) / rect.width;
+        position = Math.max(0, Math.min(1, position));
+
+        if (isDragging1) { moveThumb(thumb1, position * 100); }
+        if (isDragging2) { moveThumb(thumb2, position * 100); }
+      }
+    });
