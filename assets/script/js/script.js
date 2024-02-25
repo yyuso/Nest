@@ -120,3 +120,62 @@ function producttopsection() {
   // Menüyü açma ve kapama işlemini kontrol et
   productTopSection.classList.toggle("active");
 }
+
+
+
+const slider = document.querySelector('.slider');
+  const selectedRange = document.getElementById('selectedRange');
+  const thumb1 = document.querySelector('.thumb1');
+  const thumb2 = document.querySelector('.thumb2');
+  const minPriceDisplay = document.getElementById('minPrice');
+  const maxPriceDisplay = document.getElementById('maxPrice');
+
+  const updateSelectedRange = () => {
+    const rect = slider.getBoundingClientRect();
+    const minValue = parseInt(thumb1.style.left) / 100 * rect.width;
+    const maxValue = parseInt(thumb2.style.left) / 100 * rect.width;
+
+    selectedRange.style.left = thumb1.style.left;
+    selectedRange.style.width = (parseInt(thumb2.style.left) - parseInt(thumb1.style.left)) + '%';
+
+    minPriceDisplay.textContent = `Fiyat: $${minValue.toFixed(2)}`;
+    maxPriceDisplay.textContent = `$${maxValue.toFixed(2)}`;
+  };
+
+  window.addEventListener('resize', updateSelectedRange);
+  window.addEventListener('load', updateSelectedRange);
+
+  let isDragging1 = false;
+  let isDragging2 = false;
+
+  thumb1.addEventListener('mousedown', () => {
+    isDragging1 = true;
+  });
+
+  thumb2.addEventListener('mousedown', () => {
+    isDragging2 = true;
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging1 = false;
+    isDragging2 = false;
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (isDragging1 || isDragging2) {
+      const rect = slider.getBoundingClientRect();
+      let position = (e.clientX - rect.left) / rect.width;
+
+      position = Math.max(0, Math.min(1, position)); // Ensure the position is between 0 and 1
+
+      if (isDragging1) {
+        thumb1.style.left = position * 100 + '%';
+      }
+
+      if (isDragging2) {
+        thumb2.style.left = position * 100 + '%';
+      }
+
+      updateSelectedRange();
+    }
+  });
