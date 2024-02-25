@@ -122,67 +122,82 @@ function producttopsection() {
 }
 
 
+
 const slider = document.querySelector('.slider-rage');
-    const selectedRange = document.getElementById('selectedRange');
-    const thumb1 = document.getElementById('thumb1');
-    const thumb2 = document.getElementById('thumb2');
-    const minPriceDisplay = document.getElementById('minPrice');
-    const maxPriceDisplay = document.getElementById('maxPrice');
+const selectedRange = document.getElementById('selectedRange');
+const thumb1 = document.getElementById('thumb1');
+const thumb2 = document.getElementById('thumb2');
+const minPriceDisplay = document.getElementById('minPrice');
+const maxPriceDisplay = document.getElementById('maxPrice');
 
-    maxPriceDisplay.style.color = "var(--primary-color2)";
-    minPriceDisplay.style.color = "var(--primary-color2)";
+maxPriceDisplay.style.color = "var(--primary-color2)";
+minPriceDisplay.style.color = "var(--primary-color2)";
 
-    const updateSelectedRange = () => {
-      const rect = slider.getBoundingClientRect();
-      const minValue = (parseInt(thumb1.style.left) / 100) * rect.width || 0;
-      const maxValue = (parseInt(thumb2.style.left) / 100) * rect.width || 0;
+const updateSelectedRange = () => {
+  const rect = slider.getBoundingClientRect();
+  const minValue = (parseInt(thumb1.style.left) / 100) * rect.width || 0;
+  const maxValue = (parseInt(thumb2.style.left) / 100) * rect.width || 0;
 
-      selectedRange.style.left = thumb1.style.left;
-      selectedRange.style.width = (parseInt(thumb2.style.left) - parseInt(thumb1.style.left)) + '%';
+  selectedRange.style.left = thumb1.style.left;
+  selectedRange.style.width = (parseInt(thumb2.style.left) - parseInt(thumb1.style.left)) + '%';
 
-      minPriceDisplay.textContent = `$${minValue.toFixed(2)}`;
-      maxPriceDisplay.textContent = `$${maxValue.toFixed(2)}`;
-    };
+  minPriceDisplay.textContent = `$${minValue.toFixed(2)}`;
+  maxPriceDisplay.textContent = `$${maxValue.toFixed(2)}`;
+};
 
-    const moveThumb = (thumb, position) => {
-      thumb.style.left = position + '%';
-      updateSelectedRange();
-    };
+const moveThumb = (thumb, position) => {
+  thumb.style.left = position + '%';
+  updateSelectedRange();
+};
 
-    slider.addEventListener('mousedown', (e) => {
-      const rect = slider.getBoundingClientRect();
-      const position = (e.clientX - rect.left) / rect.width * 100;
-      const distance1 = Math.abs(parseInt(thumb1.style.left) - position);
-      const distance2 = Math.abs(parseInt(thumb2.style.left) - position);
+const calculateThumbPosition = (clientX) => {
+  const rect = slider.getBoundingClientRect();
+  return (clientX - rect.left) / rect.width * 100;
+};
 
-      if (distance1 < distance2) {
-        moveThumb(thumb1, position);
-      } else {
-        moveThumb(thumb2, position);
-      }
-    });
+let isDragging1 = false;
+let isDragging2 = false;
 
-    window.addEventListener('resize', updateSelectedRange);
-    window.addEventListener('load', updateSelectedRange);
+thumb1.addEventListener('mousedown', () => { isDragging1 = true; });
+thumb2.addEventListener('mousedown', () => { isDragging2 = true; });
 
-    let isDragging1 = false;
-    let isDragging2 = false;
+document.addEventListener('mouseup', () => {
+  isDragging1 = false;
+  isDragging2 = false;
+});
 
-    thumb1.addEventListener('mousedown', () => { isDragging1 = true; });
-    thumb2.addEventListener('mousedown', () => { isDragging2 = true; });
+document.addEventListener('mousemove', (e) => {
+  if (isDragging1 || isDragging2) {
+    const position = calculateThumbPosition(e.clientX);
 
-    document.addEventListener('mouseup', () => {
-      isDragging1 = false;
-      isDragging2 = false;
-    });
+    if (isDragging1) { moveThumb(thumb1, position); }
+    if (isDragging2) { moveThumb(thumb2, position); }
+  }
+});
 
-    document.addEventListener('mousemove', (e) => {
-      if (isDragging1 || isDragging2) {
-        const rect = slider.getBoundingClientRect();
-        let position = (e.clientX - rect.left) / rect.width;
-        position = Math.max(0, Math.min(1, position));
+// Klavye ile slider'ı kontrol etme
+document.addEventListener('keydown', (e) => {
+  const step = 1; // Klavye ile hareket ettirme adımı
 
-        if (isDragging1) { moveThumb(thumb1, position * 100); }
-        if (isDragging2) { moveThumb(thumb2, position * 100); }
-      }
-    });
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    e.preventDefault(); // Klavye ok tuşlarının varsayılan davranışını engelle
+
+    const currentPosition1 = parseFloat(thumb1.style.left) || 0;
+    const currentPosition2 = parseFloat(thumb2.style.left) || 0;
+
+    let newPosition1 = currentPosition1;
+    let newPosition2 = currentPosition2;
+
+    if (isDragging1) {
+      newPosition1 = Math.max(0, Math.min(100, currentPosition1 + (e.key === 'ArrowLeft' ? -step : step)));
+    } else if (isDragging2) {
+      newPosition2 = Math.max(0, Math.min(100, currentPosition2 + (e.key === 'ArrowLeft' ? -step : step)));
+    }
+
+    moveThumb(thumb1, newPosition1);
+    moveThumb(thumb2, newPosition2);
+  }
+});
+
+window.addEventListener('resize', updateSelectedRange);
+window.addEventListener('load', updateSelectedRange);
