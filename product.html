@@ -537,17 +537,49 @@
                                                 <b>By Price</b>
                                             </div>
                                             <div class="product-top-section-cart-price-bottom">
-                                                <div class="range-slider">
-                                                    <div class="slider"></div>
-                                                    <div class="selected-range" id="selectedRange"></div>
-                                                    <div class="thumb thumb1"></div>
-                                                    <div class="thumb thumb2"></div>
-                                                  </div>
-                                                  
-                                                  <div class="price" id="price">
-                                                    <span id="minPrice">Fiyat: $0</span>
-                                                    <span id="maxPrice">$100</span>
-                                                  </div>
+                                                <div class="product-top-section-cart-price-bottom-slider">
+                                                    <div class="range-slider">
+                                                        <div class="slider-rage"></div>
+                                                        <div class="selected-range" id="selectedRange"></div>
+                                                        <div class="thumb thumb1"></div>
+                                                        <div class="thumb thumb2"></div>
+                                                    </div>
+                                                    <div class="price" id="price">
+                                                        <div>
+                                                            <span>From :</span><span id="minPrice">Fiyat: $0</span>
+                                                        </div>
+                                                        <div>
+                                                            <span>To :</span><span id="maxPrice">$100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-top-section-cart-price-bottom-check">
+                                                    <div class="product-top-section-cart-price-bottom-check-left">
+                                                        <li>
+                                                            <input type="checkbox" id="checkbox16" class="custom-checkbox">
+                                                            <label for="checkbox16">$0.00 - $20.00</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="checkbox17" class="custom-checkbox">
+                                                            <label for="checkbox17">$20.00 - $40.00</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="checkbox18" class="custom-checkbox">
+                                                            <label for="checkbox18">$40.00 - $60.00</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="checkbox19" class="custom-checkbox">
+                                                            <label for="checkbox19">$60.00 - $80.00</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="checkbox20" class="custom-checkbox">
+                                                            <label for="checkbox20">Over $100.00</label>
+                                                        </li>
+                                                    </div>
+                                                    <div class="product-top-section-cart-price-bottom-check-right">
+                                                        <img src="assets/image/banner/fillter-widget-bg (1).png" alt="">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -556,36 +588,215 @@
                             <div class="product-bottom  mt-5">
                             <div class="row">
                                 <div class="col">
-                                    <div class="popularproduct-cart">
-                                        <span class="new">Hot</span>
-                                        <div class="popularproduct-cart-img">
-                                            <img src="assets/image/shop/product-9-1.jpg" alt="" class="img1">
-                                            <img src="assets/image/shop/product-9-2.jpg" alt="" class="img2">
-                                        </div>
-                                        <div class="popularproduct-cart-text1">Snack</div>
-                                        <div class="popularproduct-cart-tittle">Seeds of Change Organic Quinoa, Brown, & Red Rice</div>
-                                        <div class="popularproduct-cart-star">
-                                            <div>
-                                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
-                                                <i class="fa-solid fa-star-half-stroke" style="color: #FDC040;"></i>
+                                    <div class="product-bottom-up">
+                                        <b>We found <span>29</span> items for you!</b>
+                                    </div>
+                                    <div class="product-bottom-last mt-4">
+                                        <div class="row  product-bottom-last">
+                                            <div class="col">
+                                                <div class="popularproduct-cart">
+                                                    <span class="new">Hot</span>
+                                                    <div class="popularproduct-cart-img">
+                                                        <img src="assets/image/shop/product-9-1.jpg" alt="" class="img1">
+                                                        <img src="assets/image/shop/product-9-2.jpg" alt="" class="img2">
+                                                    </div>
+                                                    <div class="popularproduct-cart-text1">Snack</div>
+                                                    <div class="popularproduct-cart-tittle">Seeds of Change Organic Quinoa, Brown, & Red Rice</div>
+                                                    <div class="popularproduct-cart-star">
+                                                        <div>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star-half-stroke" style="color: #FDC040;"></i>
+                                                        </div>
+                                                        <span>(4.0)</span>
+                                                    </div>
+                                                    <div class="popularproduct-cart-text2">By<span>NestFood</span></div>
+                                                    <div class="popularproduct-cart-input">
+                                                        <div class="popularproduct-cart-price">
+                                                            <span>$54.85</span>
+                                                            <del>$55.8</del>
+                                                        </div>
+                                                        <div class="popularproduct-cart-add"><i class="fa-solid fa-cart-shopping"></i><span>add</span></div>
+                                                    </div>
+                                                    <div class="product-action">
+                                                        <div class="product-action-heart fa-sm"><i class="fa-regular fa-heart"></i></div>
+                                                        <div class="product-action-shop fa-sm"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                        <div class="product-action-eyes fa-sm"><i class="fa-regular fa-eye"></i></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <span>(4.0)</span>
-                                        </div>
-                                        <div class="popularproduct-cart-text2">By<span>NestFood</span></div>
-                                        <div class="popularproduct-cart-input">
-                                            <div class="popularproduct-cart-price">
-                                                <span>$54.85</span>
-                                                <del>$55.8</del>
+                                            <div class="col">
+                                                <div class="popularproduct-cart">
+                                                    <span class="new">Hot</span>
+                                                    <div class="popularproduct-cart-img">
+                                                        <img src="assets/image/shop/product-9-1.jpg" alt="" class="img1">
+                                                        <img src="assets/image/shop/product-9-2.jpg" alt="" class="img2">
+                                                    </div>
+                                                    <div class="popularproduct-cart-text1">Snack</div>
+                                                    <div class="popularproduct-cart-tittle">Seeds of Change Organic Quinoa, Brown, & Red Rice</div>
+                                                    <div class="popularproduct-cart-star">
+                                                        <div>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star-half-stroke" style="color: #FDC040;"></i>
+                                                        </div>
+                                                        <span>(4.0)</span>
+                                                    </div>
+                                                    <div class="popularproduct-cart-text2">By<span>NestFood</span></div>
+                                                    <div class="popularproduct-cart-input">
+                                                        <div class="popularproduct-cart-price">
+                                                            <span>$54.85</span>
+                                                            <del>$55.8</del>
+                                                        </div>
+                                                        <div class="popularproduct-cart-add"><i class="fa-solid fa-cart-shopping"></i><span>add</span></div>
+                                                    </div>
+                                                    <div class="product-action">
+                                                        <div class="product-action-heart fa-sm"><i class="fa-regular fa-heart"></i></div>
+                                                        <div class="product-action-shop fa-sm"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                        <div class="product-action-eyes fa-sm"><i class="fa-regular fa-eye"></i></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="popularproduct-cart-add"><i class="fa-solid fa-cart-shopping"></i><span>add</span></div>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="product-action-heart fa-sm"><i class="fa-regular fa-heart"></i></div>
-                                            <div class="product-action-shop fa-sm"><i class="fa-solid fa-cart-shopping"></i></div>
-                                            <div class="product-action-eyes fa-sm"><i class="fa-regular fa-eye"></i></div>
+                                            <div class="col">
+                                                <div class="popularproduct-cart">
+                                                    <span class="new">Hot</span>
+                                                    <div class="popularproduct-cart-img">
+                                                        <img src="assets/image/shop/product-9-1.jpg" alt="" class="img1">
+                                                        <img src="assets/image/shop/product-9-2.jpg" alt="" class="img2">
+                                                    </div>
+                                                    <div class="popularproduct-cart-text1">Snack</div>
+                                                    <div class="popularproduct-cart-tittle">Seeds of Change Organic Quinoa, Brown, & Red Rice</div>
+                                                    <div class="popularproduct-cart-star">
+                                                        <div>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star-half-stroke" style="color: #FDC040;"></i>
+                                                        </div>
+                                                        <span>(4.0)</span>
+                                                    </div>
+                                                    <div class="popularproduct-cart-text2">By<span>NestFood</span></div>
+                                                    <div class="popularproduct-cart-input">
+                                                        <div class="popularproduct-cart-price">
+                                                            <span>$54.85</span>
+                                                            <del>$55.8</del>
+                                                        </div>
+                                                        <div class="popularproduct-cart-add"><i class="fa-solid fa-cart-shopping"></i><span>add</span></div>
+                                                    </div>
+                                                    <div class="product-action">
+                                                        <div class="product-action-heart fa-sm"><i class="fa-regular fa-heart"></i></div>
+                                                        <div class="product-action-shop fa-sm"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                        <div class="product-action-eyes fa-sm"><i class="fa-regular fa-eye"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="popularproduct-cart">
+                                                    <span class="new">Hot</span>
+                                                    <div class="popularproduct-cart-img">
+                                                        <img src="assets/image/shop/product-9-1.jpg" alt="" class="img1">
+                                                        <img src="assets/image/shop/product-9-2.jpg" alt="" class="img2">
+                                                    </div>
+                                                    <div class="popularproduct-cart-text1">Snack</div>
+                                                    <div class="popularproduct-cart-tittle">Seeds of Change Organic Quinoa, Brown, & Red Rice</div>
+                                                    <div class="popularproduct-cart-star">
+                                                        <div>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star-half-stroke" style="color: #FDC040;"></i>
+                                                        </div>
+                                                        <span>(4.0)</span>
+                                                    </div>
+                                                    <div class="popularproduct-cart-text2">By<span>NestFood</span></div>
+                                                    <div class="popularproduct-cart-input">
+                                                        <div class="popularproduct-cart-price">
+                                                            <span>$54.85</span>
+                                                            <del>$55.8</del>
+                                                        </div>
+                                                        <div class="popularproduct-cart-add"><i class="fa-solid fa-cart-shopping"></i><span>add</span></div>
+                                                    </div>
+                                                    <div class="product-action">
+                                                        <div class="product-action-heart fa-sm"><i class="fa-regular fa-heart"></i></div>
+                                                        <div class="product-action-shop fa-sm"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                        <div class="product-action-eyes fa-sm"><i class="fa-regular fa-eye"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="popularproduct-cart">
+                                                    <span class="new">Hot</span>
+                                                    <div class="popularproduct-cart-img">
+                                                        <img src="assets/image/shop/product-9-1.jpg" alt="" class="img1">
+                                                        <img src="assets/image/shop/product-9-2.jpg" alt="" class="img2">
+                                                    </div>
+                                                    <div class="popularproduct-cart-text1">Snack</div>
+                                                    <div class="popularproduct-cart-tittle">Seeds of Change Organic Quinoa, Brown, & Red Rice</div>
+                                                    <div class="popularproduct-cart-star">
+                                                        <div>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star-half-stroke" style="color: #FDC040;"></i>
+                                                        </div>
+                                                        <span>(4.0)</span>
+                                                    </div>
+                                                    <div class="popularproduct-cart-text2">By<span>NestFood</span></div>
+                                                    <div class="popularproduct-cart-input">
+                                                        <div class="popularproduct-cart-price">
+                                                            <span>$54.85</span>
+                                                            <del>$55.8</del>
+                                                        </div>
+                                                        <div class="popularproduct-cart-add"><i class="fa-solid fa-cart-shopping"></i><span>add</span></div>
+                                                    </div>
+                                                    <div class="product-action">
+                                                        <div class="product-action-heart fa-sm"><i class="fa-regular fa-heart"></i></div>
+                                                        <div class="product-action-shop fa-sm"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                        <div class="product-action-eyes fa-sm"><i class="fa-regular fa-eye"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="popularproduct-cart">
+                                                    <span class="new">Hot</span>
+                                                    <div class="popularproduct-cart-img">
+                                                        <img src="assets/image/shop/product-9-1.jpg" alt="" class="img1">
+                                                        <img src="assets/image/shop/product-9-2.jpg" alt="" class="img2">
+                                                    </div>
+                                                    <div class="popularproduct-cart-text1">Snack</div>
+                                                    <div class="popularproduct-cart-tittle">Seeds of Change Organic Quinoa, Brown, & Red Rice</div>
+                                                    <div class="popularproduct-cart-star">
+                                                        <div>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                                            <i class="fa-solid fa-star-half-stroke" style="color: #FDC040;"></i>
+                                                        </div>
+                                                        <span>(4.0)</span>
+                                                    </div>
+                                                    <div class="popularproduct-cart-text2">By<span>NestFood</span></div>
+                                                    <div class="popularproduct-cart-input">
+                                                        <div class="popularproduct-cart-price">
+                                                            <span>$54.85</span>
+                                                            <del>$55.8</del>
+                                                        </div>
+                                                        <div class="popularproduct-cart-add"><i class="fa-solid fa-cart-shopping"></i><span>add</span></div>
+                                                    </div>
+                                                    <div class="product-action">
+                                                        <div class="product-action-heart fa-sm"><i class="fa-regular fa-heart"></i></div>
+                                                        <div class="product-action-shop fa-sm"><i class="fa-solid fa-cart-shopping"></i></div>
+                                                        <div class="product-action-eyes fa-sm"><i class="fa-regular fa-eye"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

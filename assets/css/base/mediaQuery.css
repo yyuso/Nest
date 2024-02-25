@@ -171,4 +171,7 @@
         display: flex;
         gap: 15px;
     }
+    .popularproduct-cart{
+        width: 100% !important;
+    }
 }

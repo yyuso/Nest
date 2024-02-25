@@ -122,12 +122,15 @@ function producttopsection() {
 }
 
 
-const slider = document.querySelector('.slider');
+  const slider = document.querySelector('.slider-rage');
   const selectedRange = document.getElementById('selectedRange');
   const thumb1 = document.querySelector('.thumb1');
   const thumb2 = document.querySelector('.thumb2');
   const minPriceDisplay = document.getElementById('minPrice');
   const maxPriceDisplay = document.getElementById('maxPrice');
+
+  maxPriceDisplay.style.color="var(--primary-color2)";
+  minPriceDisplay.style.color="var(--primary-color2)";
 
   const updateSelectedRange = () => {
     const rect = slider.getBoundingClientRect();
@@ -137,7 +140,7 @@ const slider = document.querySelector('.slider');
     selectedRange.style.left = thumb1.style.left;
     selectedRange.style.width = (parseInt(thumb2.style.left) - parseInt(thumb1.style.left)) + '%';
 
-    minPriceDisplay.textContent = `Fiyat: $${minValue.toFixed(2)}`;
+    minPriceDisplay.textContent = `$${minValue.toFixed(2)}`;
     maxPriceDisplay.textContent = `$${maxValue.toFixed(2)}`;
   };
 
