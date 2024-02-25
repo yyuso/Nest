@@ -221,7 +221,3 @@
     display: flex;
     justify-content: space-between;
 }
-.product-bottom-last{
-    display: flex;
-    gap: 15px;
-}

@@ -174,4 +174,8 @@
     .popularproduct-cart{
         width: 100% !important;
     }
+    .product-bottom-last{
+        display: flex;
+        gap: 15px;
+    }
 }
