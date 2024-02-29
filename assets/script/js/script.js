@@ -146,6 +146,8 @@ const updateSelectedRange = () => {
 };
 
 const moveThumb = (thumb, position) => {
+  const rect = slider.getBoundingClientRect();
+  position = Math.max(0, Math.min(100, position)); // Slider'ın sınırlarını kontrol et
   thumb.style.left = position + '%';
   updateSelectedRange();
 };
@@ -201,3 +203,13 @@ document.addEventListener('keydown', (e) => {
 
 window.addEventListener('resize', updateSelectedRange);
 window.addEventListener('load', updateSelectedRange);
+
+
+function mobilenav(){
+  var div = document.getElementById("mobilenav");
+  if (div.classList.contains("active")) {
+              div.classList.remove("active");
+          } else {
+              div.classList.add("active");
+          }
+}

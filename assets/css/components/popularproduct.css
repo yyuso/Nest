@@ -17,12 +17,12 @@
     transform: scale(1.05);
     transform: translateY(-20%);
     transition-duration: 0.5s;
-    color: var(--primary-color2);
+    color: var(--primary-color2) !important;
 }
 .color-changeable {
     color: var(--primary-color5);
     cursor: pointer;
 } 
 .color-changeable.clicked {
-    color: var(--primary-color2);
+    color: var(--primary-color2) !important;
 }

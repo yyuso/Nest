@@ -96,7 +96,42 @@
                 <div class="container">
                     <div class="row middleheadermain">
                         <div class="col col-2 sections">
-                            <i class="fa-solid fa-bars fa-xl"></i>
+                            <div class="offcanvas offcanvas-start" id="demo">
+                                <div class="offcanvas-header">
+                                    <img src="assets/image/theme/logo.svg" alt="">
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <hr>
+                                <div class="offcanvas-body">
+                                    <div class="offcanvas-bodyInput">
+                                        <input type="text" placeholder="Search for items…">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: var(--primary-color);"></i>
+                                    </div>
+                                    <div class="offcanvas-bodyTittle mt-4">
+                                        <a href=""><span>Deals</span></a>
+                                        <a href="product.html"><span>Product</span></a>
+                                        <a href="index.html"><span>Home</span></a>
+                                        <a onclick="mobilenav()"><span>Mega Menu</span></a>
+                                        <div id="mobilenav" class="mobilenav">
+                                            <ul>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                            </ul>
+                                        </div>
+                                        <a href=""><span>Home1</span></a>
+                                        <a href=""><span>Home2</span></a>
+                                        <a href=""><span>Home2</span></a>
+                                        <a href=""><span>Home2</span></a>
+                                        <a href=""><span>Home2</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"  style="color: var(--primary-color);">
+                                <i class="fa-solid fa-bars fa-xl"></i>
+                            </button>  
                         </div>
                         <div class="col-7 col-md-2 col-xs-6 middleHeader-logo">
                             <a href="index.html"><img src="assets/image/theme/logo.svg" alt=""></a>

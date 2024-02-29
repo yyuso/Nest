@@ -178,4 +178,43 @@
         display: flex;
         gap: 15px;
     }
+    .offcanvas-bodyInput input{
+        height: 45px;
+        width: 100%;
+        border: 1px solid var(--primary-color2);
+        border-radius: 5px;
+        padding: 10px;
+        color: var(--primary-color2);
+    }
+    .offcanvas-bodyInput{
+        position: relative;
+    }
+    .offcanvas-bodyInput i{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    .offcanvas-bodyTittle{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 20px;
+        gap: 20px;
+        font-family: "Quicksand", sans-serif;
+    }
+    .offcanvas-bodyTittle a{
+        border-bottom: 1px solid var(--primary-color10);
+        color: var(--primary-color) !important;
+        padding-bottom: 10px;
+    }
+    .offcanvas-bodyTittle a:hover{
+        color: var(--primary-color2) !important;
+        border-bottom: 1px solid var(--primary-color2);
+    }
+    .mobilenav{
+        display: none;
+    }
+    .mobilenav.active{
+        display: block;
+    }
 }
