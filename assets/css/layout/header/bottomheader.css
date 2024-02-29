@@ -52,6 +52,7 @@
     font-size: 18px !important;
     font-family: "Quicksand", sans-serif;
     color: var(--primary-color5) !important;
+    width: max-content;
 }
 .navbar-link-dealss{
     display: flex !important;
