@@ -24,5 +24,5 @@
     cursor: pointer;
 } 
 .color-changeable.clicked {
-    color: var(--primary-color2);
+    color: var(--primary-color2) !important;
 }
