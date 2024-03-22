@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/image/theme/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <title>Nest</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="PopupMenu" id="PopupMenu">
+            <div class="tittle2" onclick="popup()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="button-div">           
+              <div class="PopupMenu-main">
+                <div class="PopupMenu-tittle"><i class="fa-solid fa-user"></i>User</div>
+                <div class="PopupMenu-tittle"><i class="fa-solid fa-cart-shopping"></i>Cart</div>
+                <div class="PopupMenu-tittle"><i class="fa-solid fa-recycle"></i>Compare</div>
+                <div class="PopupMenu-tittle"><i class="fa-regular fa-heart"></i>Wishlist</div>
+                <div class="PopupMenu-tittle"><i class="fa-regular fa-user"></i>Account</div>
+                <div class="PopupMenu-tittle"><i class="fa-solid fa-home"></i>Home</div>
+              </div>
+            </div>
+        </div>
+        <header class="header">
+            <section class="topHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="topHeader-left">
+                                <span style="border: none;">About Us</span>
+                                <span>My Account</span>
+                                <span>Wishlist</span>
+                                <span>Order Tracking</span>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                           <div class="text-green anime" style="margin-top: -248px;"> Supper Value Deals - Save more with coupons</div>
+                        </div>
+                        <div class="col">
+                            <div class="topHeader-right">
+                                <span style="border: none;">Need help? Call Us: <span class="text-green" style="border: none;">+ 1800 900</span></span>
+                                <div class="header-dropdown">
+                                    <div class="topHeader-right-button"><span>English</span></div>
+                                    <div class="header-dropdown-content">
+                                        <div class="topHeader-flag">
+                                            <div class="topHeader-flag-section">
+                                                <img src="assets/image/theme/flag-dt.png" class="flag">
+                                                <span>Deutsch</span>
+                                            </div>
+                                            <div class="topHeader-flag-section">
+                                                <img src="assets/image/theme/flag-fr.png" class="flag">
+                                                <span>Français</span>
+                                            </div>
+                                            <div class="topHeader-flag-section">
+                                                <img src="assets/image/theme/flag-ru.png" class="flag">
+                                                <span>Pусский</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-dropdown">
+                                    <div class="topHeader-right-button"><span>USD</span></div>
+                                    <div class="header-dropdown-content">
+                                        <div class="topHeader-flag">
+                                            <div class="topHeader-flag-section">
+                                                <img src="assets/image/theme/flag-dt.png" class="flag">
+                                                <span>MBP</span>
+                                            </div>
+                                            <div class="topHeader-flag-section">
+                                                <img src="assets/image/theme/flag-fr.png" class="flag">
+                                                <span>INR</span>
+                                            </div>
+                                            <div class="topHeader-flag-section">
+                                                <img src="assets/image/theme/flag-ru.png" class="flag">
+                                                <span>EU</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="middleHeader mt-4 mb-4">
+                <div class="container">
+                    <div class="row middleheadermain">
+                        <div class="col col-2 sections">
+                            <div class="offcanvas offcanvas-start" id="demo">
+                                <div class="offcanvas-header">
+                                    <img src="assets/image/theme/logo.svg" alt="">
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <hr>
+                                <div class="offcanvas-body">
+                                    <div class="offcanvas-bodyInput">
+                                        <input type="text" placeholder="Search for items…">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: var(--primary-color);"></i>
+                                    </div>
+                                    <div class="offcanvas-bodyTittle mt-4">
+                                        <a href=""><span>Deals</span></a>
+                                        <a href="product.html"><span>Product</span></a>
+                                        <a href="index.html"><span>Home</span></a>
+                                        <a onclick="mobilenav()"><span>Mega Menu</span></a>
+                                        <div id="mobilenav" class="mobilenav">
+                                            <ul>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                                <span>sa</span>
+                                            </ul>
+                                        </div>
+                                        <a href="checkout.html">CheckOut</a>
+                                        <a href="contact.html">Contact</a>
+                                        <a href="aboutus.html">About Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"  style="color: var(--primary-color);">
+                                <i class="fa-solid fa-bars fa-xl"></i>
+                            </button>  
+                        </div>
+                        <div class="col-7 col-md-2 col-xs-6 middleHeader-logo">
+                            <a href="index.html"><img src="assets/image/theme/logo.svg" alt=""></a>
+                        </div>
+                        <div class="col col-md-5 middleHeader-search">
+                          <div class="middleheader-mid">
+                            <div class="middleheader-search">
+                                <div class="input-group" style="flex-wrap: nowrap;">
+                                    <button class="btn dropdown-toggle middleheader-search-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Categories</button>
+                                    <ul class="dropdown-menu p-1">
+                                      <div class="dropdown-menu-scroll">
+                                        <input type="text" class="dropdown-menu-input">    
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </div>
+                                    </ul>
+                                    <input type="text" class="middleheader-search-input" aria-label="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3 col-md-5 col-xs-3 middleHeader-section">
+                            <div class="row align-items-center h-100">
+                                <div class="col middleHeader-section-1">
+                                    <div class="middleheader-search">
+                                        <div class="input-group" style="flex-wrap: nowrap;">
+                                            <button class="btn dropdown-toggle middleheader-location" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-location-dot fa-xs"></i>Your Location</button>
+                                            <ul class="dropdown-menu p-1">
+                                              <div class="dropdown-menu-scroll">
+                                                <input type="text" class="dropdown-menu-input">    
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                              </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col middleHeader-section-2">
+                                    <div class="middleheader-compare">
+                                        <i class="fa-solid fa-recycle fa-xl text-grey"></i>
+                                        <div class="pro-count middleheader-position1 bg-green text-white">3</div>
+                                        <span class="text-grey">Compare</span>
+                                    </div>
+                                </div>
+                                <div class="col middleHeader-section-3">
+                                    <a href="favorite.html">
+                                        <div class="middleheader-compare">
+                                            <i class="fa-regular fa-heart fa-xl text-grey"></i>
+                                            <div class="pro-count middleheader-position2 bg-green text-white">6</div>
+                                            <span class="text-grey">Wishlist</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col middleHeader-section-4">
+                                    <div class="middleheader-compare">
+                                        <i class="fa-solid fa-cart-shopping fa-xl text-grey"></i>
+                                        <div class="pro-count middleheader-position3 bg-green text-white">2</div>
+                                        <span class="text-grey">Cart</span>
+                                    </div>
+                                </div>
+                                <div class="col middleHeader-section-5">
+                                    <div class="account-dropdown">
+                                        <div class="topHeader-right-button">  
+                                            <div class="middleheader-compare">
+                                                <i class="fa-regular fa-user fa-xl text-grey"></i>
+                                                <a class="text-grey">Account</a>
+                                            </div>                                      
+                                        </div>
+                                        <div class="account-dropdown-content">
+                                            <div class="middleheader-right-user">
+                                                <div class="middleheader-right-user-section text-grey">
+                                                    <i class="fa-regular fa-user"></i>
+                                                    <span>My Account</span>
+                                                </div>
+                                                <div class="middleheader-right-user-section text-grey">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    <span>Order Tracking</span>
+                                                </div>
+                                                <div class="middleheader-right-user-section text-grey">
+                                                    <i class="fa-solid fa-tag" style="rotate: 44deg;"></i>
+                                                    <span>My Voucher</span>
+                                                </div>
+                                                <div class="middleheader-right-user-section text-grey">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <span>My Wishlist</span>
+                                                </div>
+                                                <div class="middleheader-right-user-section text-grey">
+                                                    <i class="fa-solid fa-sliders"></i>
+                                                    <span>Setting</span>
+                                                </div>
+                                                <div class="middleheader-right-user-section text-grey">
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                    <span>Sign out</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="bottomHeader" id="navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-9">
+                            <div class="bottomheader-left">
+                                <nav class="navbar navbar-expand-lg navbar-light ">
+                                    <div class="container-fluid">
+                                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                        <div class="navbar-nav gap-4">
+                                          <a class="nav-link navbar-link" href="#">
+                                            <div class="input-group" style="flex-wrap: nowrap;">
+                                                <button class="btn dropdown-toggle bottomheader-left-categori-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Browse All Categories
+                                                </button>
+                                                <ul class="dropdown-menu p-1">
+                                                  <div class="bottomheader-left-categori">
+                                                    <div class="bottomheader-left-categori-start">
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-1.svg" alt="">
+                                                            <span>Milks and Dairies</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-2.svg" alt="">
+                                                            <span>Clothing & beauty</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-3.svg" alt="">
+                                                            <span>Pet Foods & Toy</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-4.svg" alt="">
+                                                            <span>Baking material</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-5.svg" alt="">
+                                                            <span>Fresh Fruit</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottomheader-left-categori-end">
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-6.svg" alt="">
+                                                            <span>Wines & Drinks</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-7.svg" alt="">
+                                                            <span>Fresh Seafood</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-8.svg" alt="">
+                                                            <span>Fast food</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-9.svg" alt="">
+                                                            <span>Vegetables</span>
+                                                        </div>
+                                                        <div class="bottomheader-left-categori-group">
+                                                            <img src="assets/image/theme/icons/category-10.svg" alt="">
+                                                            <span>Bread and Juice</span>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </ul>
+                                            </div>
+                                          </a>
+                                          <a class="nav-link navbar-link-deals" href="#">
+                                            <i class="fa-solid fa-fire"></i>
+                                            <span>Deals</span>
+                                          </a>
+                                          <a class="nav-link navbar-link-deals" href="product.html">Product</a>
+                                          <a class="nav-link navbar-link-deals" href="#">Home</a>
+                                          <a class="nav-link navbar-link-dealss" href="#">
+                                            <div class="megamenu-dropdown">
+                                                <div class="navbar-link-button">
+                                                    <span class="navbar-link-button-meganu">Mega Menu</span>
+                                                </div>
+                                                <div class="megamenu-dropdown-content">
+                                                    <div class="navbar-link-menu row">
+                                                        <div class="navbar-link-menu-section col">
+                                                            <b>Fruit & Vegetables</b>
+                                                            <div class="navbar-link-menu-section-tittle">
+                                                                <span>Meat & Poultry</span>
+                                                                <span>Fresh Vegetables</span>
+                                                                <span>Herbs & Seasonings</span>
+                                                                <span>Cuts & Sprouts</span>
+                                                                <span>Exotic Fruits & Veggies</span>
+                                                                <span>Packaged Produce</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="navbar-link-menu-section col">
+                                                            <b>Breakfast & Dairy</b>
+                                                            <div class="navbar-link-menu-section-tittle">
+                                                                <span>Milk & Flavoured Milk</span>
+                                                                <span>Butter and Margarine</span>
+                                                                <span>Eggs Substitutes</span>
+                                                                <span>Marmalades</span>
+                                                                <span>Sour Cream</span>
+                                                                <span>Cheese</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="navbar-link-menu-section col">
+                                                            <b>Meat & Seafood</b>
+                                                            <div class="navbar-link-menu-section-tittle">
+                                                                <span>Breakfast Sausage</span>
+                                                                <span>Dinner Sausage</span>
+                                                                <span>Chicken</span>
+                                                                <span>Sliced Deli Meat</span>
+                                                                <span>Wild Caught Fillets</span>
+                                                                <span>Crab and Shellfish</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="navbar-link-menu-section col">
+                                                            <img src="assets/image/banner/banner-menu.png" class="banner-img">
+                                                            <div class="banner-img-text">
+                                                                <div class="banner-img-text-left">
+                                                                    <span style="color: var(--primary-color);">HOT DEALS</span>
+                                                                    <b>Don't miss Trending</b>
+                                                                    <span style="color: #81b13d;">Save to 50%</span>
+                                                                    <div class="banner-shopnow">Shop Now</div> 
+                                                                </div>
+                                                                <div class="banner-img-text-right">
+                                                                    <div class="banner-offbutton">25% <br>OFF</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </a>
+                                          <a class="nav-link navbar-link-deals" href="checkout.html">CheckOut</a>
+                                          <a class="nav-link navbar-link-deals" href="product.html">Product</a>
+                                          <a class="nav-link navbar-link-deals" href="contact.html">Contact</a>
+                                          <a class="nav-link navbar-link-deals" href="aboutus.html">About Us</a>
+                                          <a class="nav-link navbar-link-deals" href="contact.html">Contact</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="bottomheader-right"> 
+                                <div class="bottomheader-right-img">
+                                    <img src="assets/image/theme/icons/icon-headphone.svg" style="width: 50px;">
+                                </div>
+                                <div class="bottomheader-right-text">
+                                    <span class="bottomheader-right-text1">1900 - 888</span>
+                                    <span class="bottomheader-right-text2">24/7 Support Center</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+        </main>
+        <footer>
+            <section class="TopFooter mt-5">
+                <div class="container">
+                    <div class="topfooter-img">
+                        <img src="assets/image/banner/banner-9.png" alt="">
+                        <div class="topfooter-img-text">
+                            <b>Don’t miss amazing <br> grocery deals</b>
+                            <span>Save up to 50% off on your first order</span>
+                            <div class="slider-input mt-5 m-1:sm">
+                                <div class="slider-paper"><i class="fa-regular fa-paper-plane"></i></div>
+                                <input type="text" placeholder="your mail address">
+                                <div class="slider-input-subscribe">Subscribe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="MiddleFooter mt-5 ">
+                <div class="container">
+                    <div class="middlefooter">
+                        <div class="row middlefooter">
+                            <div class="col">
+                                <div class="middlefooter-icon">
+                                    <img src="assets/image/theme/icons/icon-1.svg" alt="">
+                                    <div class="middlefooter-icon-tittle">
+                                        <b>Best prices & offers</b>
+                                        <span>Orders $50 or more</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="middlefooter-icon">
+                                    <img src="assets/image/theme/icons/icon-2.svg" alt="">
+                                    <div class="middlefooter-icon-tittle">
+                                        <b>Free delivery</b>
+                                        <span>24/7 amazing services</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="middlefooter-icon">
+                                    <img src="assets/image/theme/icons/icon-3.svg" alt="">
+                                    <div class="middlefooter-icon-tittle">
+                                        <b>Great daily deal</b>
+                                        <span>When you sign up</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="middlefooter-icon">
+                                    <img src="assets/image/theme/icons/icon-4.svg" alt="">
+                                    <div class="middlefooter-icon-tittle">
+                                        <b>Wide assortment</b>
+                                        <span>Mega Discounts</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="middlefooter-icon">
+                                    <img src="assets/image/theme/icons/icon-5.svg" alt="">
+                                    <div class="middlefooter-icon-tittle">
+                                        <b>Easy returns</b>
+                                        <span>Within 30 days</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="BottomFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12  bottomfooter1">
+                            <div class="bottomfooter-logo">
+                                <img src="assets/image/theme/logo.svg" alt="">
+                                <span>Awesome grocery store website template</span>
+                            </div>
+                            <div class="bottomfooter-address">
+                                <div class="bottomfooter-address-group">
+                                    <i class="fa-solid fa-location-dot" style="color: #3bb77e;"></i>
+                                    <b>Address:</b>
+                                    <span>5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+                                </div>
+                            </div>
+                            <div class="bottomfooter-address">
+                                <div class="bottomfooter-address-group">
+                                    <i class="fa-solid fa-headphones-simple" style="color: #3bb77e;"></i>
+                                    <b>Call Us:</b>
+                                    <span>(+91) - 540-025-124553</span>
+                                </div>
+                            </div>
+                            <div class="bottomfooter-address">
+                                <div class="bottomfooter-address-group">
+                                    <i class="fa-solid fa-headphones-simple" style="color: #3bb77e;"></i>
+                                    <b>Email:</b>
+                                    <span>sale@Nest.com</span>
+                                </div>
+                            </div>
+                            <div class="bottomfooter-address">
+                                <div class="bottomfooter-address-group">
+                                    <i class="fa-regular fa-clock" style="color: #3bb77e;"></i>
+                                    <b>Hours:</b>
+                                    <span>10:00 - 18:00, Mon - Sat</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2  bottomfooter2">
+                            <b>Company</b>
+                            <div class="bottomfooter2-text">
+                                <p>About Us</p>
+                                <p>Delivery Information</p>
+                                <p>Privacy Policy</p>
+                                <p>Terms & Conditions</p>
+                                <p>Contact Us</p>
+                                <p>Support Center</p>
+                                <p>Careers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 bottomfooter2">
+                            <b>Account</b>
+                            <div class="bottomfooter2-text">
+                                <p>Sign In</p>
+                                <p>View Cart</p>
+                                <p>My Wishlist</p>
+                                <p>Track My Order</p>
+                                <p>Help Ticket</p>
+                                <p>Shipping Details</p>
+                                <p>Compare products</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 bottomfooter2">
+                            <b>Corporate</b>
+                            <div class="bottomfooter2-text">
+                                <p>Become a Vendor</p>
+                                <p>Affiliate Program</p>
+                                <p>Farm Business</p>
+                                <p>Farm Careers</p>
+                                <p>Our Suppliers</p>
+                                <p>Accessibility</p>
+                                <p>Promotions</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 bottomfooter2">
+                            <b>Popular</b>
+                            <div class="bottomfooter2-text">
+                                <p>Milk & Flavoured Milk</p>
+                                <p>Butter and Margarine</p>
+                                <p>Eggs Substitutes</p>
+                                <p>Marmalades</p>
+                                <p>Sour Cream and Dips</p>
+                                <p>Tea & Kombucha</p>
+                                <p>Cheese</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 bottomfooter3">
+                            <b>Install App</b>
+                            <div class="bottomfooter3-install">
+                                <p>From App Store or Google Play</p>
+                                <div class="bottomfooter3-install-img">
+                                    <img src="assets/image/theme/app-store.jpg" alt="">
+                                    <img src="assets/image/theme/google-play.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="bottomfooter3-payment">
+                                <p>Secured Payment Gateways</p>
+                                <img src="assets/image/theme/payment-method.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-4 text-green">
+                </div>       
+            </section>         
+            <section class="LastBottomFooter mt-5 mb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="lastbottomfooter-top">
+                                © 2022, 
+                                <span>Nest</span>
+                                 - HTML Ecommerce Template All rights <br> reserved
+                            </div>
+                        </div>
+                        <div class="col col-6 lastbottomfooter-working">
+                            <div class="lastbottomfooter-middle">
+                                <img src="assets/image/theme/icons/phone-call.svg" alt="" style="color: grey;">
+                                <div class="lastbottomfooter-middle-phone">
+                                    <b>1900 - 6666</b>
+                                    <span>Working 8:00 - 22:00</span>
+                                </div>
+                            </div>
+                            <div class="lastbottomfooter-middle">
+                                <img src="assets/image/theme/icons/phone-call.svg" alt="">
+                                <div class="lastbottomfooter-middle-phone">
+                                    <b>1900 - 8888</b>
+                                    <span>Working 8:00 - 22:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-3 lastbottomfooter-followUS">
+                            <div class="lastbottomfooter-followus-group">
+                                <b>Follow US</b>
+                                <div class="lastbottomfooter-followus"><img src="assets/image/theme/icons/icon-youtube-white.svg" alt=""></div>
+                                <div class="lastbottomfooter-followus"><img src="assets/image/theme/icons/icon-twitter-white.svg" alt=""></div>
+                                <div class="lastbottomfooter-followus"><img src="assets/image/theme/icons/icon-pinterest-white.svg" alt=""></div>
+                                <div class="lastbottomfooter-followus"><img src="assets/image/theme/icons/icon-instagram-white.svg" alt=""></div>
+                                <div class="lastbottomfooter-followus"><img src="assets/image/theme/icons/icon-facebook-white.svg" alt=""></div>
+                            </div>
+                            <span class="text-grey" style="font-size: 14px;">Up to 15% discount on your first subscribe</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer> 
+    </div>
+    <script src="assets/script/js/script.js"></script>
+</body>
+</html>
